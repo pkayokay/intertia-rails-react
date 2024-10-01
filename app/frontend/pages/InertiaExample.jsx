@@ -13,7 +13,6 @@ export default function InertiaExample({ name }) {
   return (
     <>
       <Head title="Inertia + Vite Ruby + React Example" />
-
       <div className={cs.root}>
         <h1 className={cs.h1}>Hello {name}!</h1>
 
