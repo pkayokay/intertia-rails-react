@@ -13,10 +13,9 @@ export default function InertiaExample({ name }) {
   return (
     <>
       <Head title="Inertia + Vite Ruby + React Example" />
-
       <div className={cs.root}>
+        <p className="mb-6 font-medium text-lg text-white rounded-full py-2 bg-rose-800 inline-block px-4">SSR is enabled, view source to see.</p>
         <h1 className={cs.h1}>Hello {name}!</h1>
-
         <div>
           <a href="https://inertia-rails.netlify.app" target="_blank">
             <img className={cs.logo} src={inertiaSvg} alt="Inertia logo" />
@@ -37,11 +36,10 @@ export default function InertiaExample({ name }) {
           </a>
         </div>
 
-        <h2 className={cs.h2}>Inertia + Vite Ruby + React</h2>
-
+        <h2 className={`${cs.h2} mb-6`}>Inertia + Vite Ruby + React</h2>
         <div className="card">
           <button
-            className={cs.button}
+            className={`${cs.button} mb-6`}
             onClick={() => setCount((count) => count + 1)}
           >
             count is {count}

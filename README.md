@@ -1,24 +1,15 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Deployment on Hatchbox
 
-Things you may want to cover:
+### Processes
+Add process reload command for inertia SSR port
+`kill -9 $(lsof -ti tcp:13714) 2>/dev/null`
 
-* Ruby version
 
-* System dependencies
+### Custom Deployments
+Add pre-build script
+`rm -rf tmp/cache/vite`
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Add a post-deploy script
+`bin/vite build --ssr && bin/vite ssr`
