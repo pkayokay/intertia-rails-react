@@ -2,6 +2,7 @@
 
 This is an example repo of a Rails and React app with [InertiaJS](https://github.com/inertiajs/inertia-rails), with [server-side rendering enabled](https://inertia-rails.netlify.app/guide/server-side-rendering.html#server-side-rendering-ssr).
 
+You can find the app on https://6wlq3.hatchboxapp.com/
 ## Deployment on Hatchbox
 
 ### Processes
