@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Rails Marketing Layout</title>
+    <meta name="description" content="Some description">
+    <meta property="og:description" content="Some description">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= yield :head %>
+
+    <link rel="icon" href="/icon.png" type="image/png">
+    <link rel="apple-touch-icon" href="/icon.png">
+
+    <%= vite_client_tag %>
+    <%= vite_javascript_tag 'marketing', "data-turbo-track": "reload" %>
+    <%= vite_stylesheet_tag 'marketing', "data-turbo-track": "reload" %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
