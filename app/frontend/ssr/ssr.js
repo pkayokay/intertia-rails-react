@@ -10,6 +10,10 @@ createServer((page) =>
       const pages = import.meta.glob('../pages/**/*.jsx', { eager: true })
       return pages[`../pages/${name}.jsx`]
     },
-    setup: ({ App, props }) => <App {...props} />,
+    setup({ el, App, props }) {
+      const root = createRoot(el)
+
+      root.render(createElement(App, props))
+    },
   }),
 )
