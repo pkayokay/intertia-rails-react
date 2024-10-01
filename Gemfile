@@ -57,3 +57,7 @@ end
 gem "inertia_rails-contrib", "~> 0.2.1"
 
 gem "vite_rails", "~> 3.0"
+
+# Needed until Ruby 3.3.4 is released https://github.com/ruby/ruby/pull/11006
+# https://github.com/ruby/net-pop/issues/26
+gem "net-pop", github: "ruby/net-pop"
