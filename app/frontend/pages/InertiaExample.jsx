@@ -14,6 +14,7 @@ export default function InertiaExample({ name }) {
     <>
       <Head title="Inertia + Vite Ruby + React Example" />
       <div className={cs.root}>
+        <p className="mb-6 font-bold text-lg text-red-700">SSR is enabled, view source to see.</p>
         <h1 className={cs.h1}>Hello {name}!</h1>
 
         <div>
@@ -37,7 +38,6 @@ export default function InertiaExample({ name }) {
         </div>
 
         <h2 className={cs.h2}>Inertia + Vite Ruby + React</h2>
-
         <div className="card">
           <button
             className={cs.button}
