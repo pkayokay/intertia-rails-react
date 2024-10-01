@@ -1,5 +1,6 @@
 import { Head } from '@inertiajs/react'
 import { useState } from 'react'
+import { Link } from '@inertiajs/react'
 
 import reactSvg from '/assets/react.svg'
 import inertiaSvg from '/assets/inertia.svg'
@@ -52,6 +53,10 @@ export default function InertiaExample({ name }) {
         <p className={cs.readTheDocs}>
           Click on the Inertia, Vite Ruby, and React logos to learn more
         </p>
+        <div className="mt-10 flex flex-col items-center justify-center space-y-2">
+          <Link href="/marketing_inertia" className="rounded-full py-2 px-5 bg-neutral-800 inline-block text-white">Inertia Marketing Page</Link>
+          <a href="/marketing_rails" className="rounded-full py-2 px-5 bg-neutral-800 inline-block text-white">Rails Marketing Page</a>
+        </div>
       </div>
     </>
   )
