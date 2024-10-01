@@ -36,10 +36,10 @@ export default function InertiaExample({ name }) {
           </a>
         </div>
 
-        <h2 className={cs.h2}>Inertia + Vite Ruby + React</h2>
+        <h2 className={`${cs.h2} mb-6`}>Inertia + Vite Ruby + React</h2>
         <div className="card">
           <button
-            className={cs.button}
+            className={`${cs.button} mb-6`}
             onClick={() => setCount((count) => count + 1)}
           >
             count is {count}
