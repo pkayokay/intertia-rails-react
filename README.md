@@ -15,7 +15,7 @@ You can find the app on https://6wlq3.hatchboxapp.com/
 <img width="1199" alt="image" src="https://github.com/user-attachments/assets/3237e2d9-7bcb-4d3e-8d21-18d926f11e54">
 
 2. Update custom deployment scripts section
-- Add pre-build script: `rm -rf tmp/cache/vite`
-- Add a post-deploy script: `bin/vite build --ssr && bin/vite ssr`
+- Add pre-build script clear the vite cache: `rm -rf tmp/cache/vite`
+- Add a post-deploy script to build your server-side bundle: `bin/vite build --ssr`
 
 <img width="1042" alt="custom_deployments" src="https://github.com/user-attachments/assets/7076402d-0bd0-4a5d-ba8c-7c34b144e5ad">
