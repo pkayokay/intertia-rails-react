@@ -54,7 +54,7 @@ group :test do
   gem "selenium-webdriver"
 end
 
-gem "inertia_rails-contrib", "~> 0.2.1"
+gem "inertia_rails-contrib", "~> 0.4.0"
 
 gem "vite_rails", "~> 3.0"
 
